@@ -10,16 +10,20 @@ if (menuIcon && navbar) {
 // =======================
 function readmoreless() {
   const dots = document.getElementById("dots");
-  const moreText = document.getElementById("more");
-  const btnText = document.getElementById("myBtn");
+  const more = document.getElementById("more");
+  const btn = document.getElementById("myBtn");
 
-  dots.classList.toggle("hidden");
-  moreText.classList.toggle("hidden");
+  const isHidden = more.classList.contains("hidden");
 
-  btnText.innerHTML =
-    moreText.classList.contains("hidden")
-      ? "Read more"
-      : "Read less";
+  if (isHidden) {
+    more.classList.remove("hidden");
+    dots.classList.add("hidden");
+    btn.innerHTML = "Read less";
+  } else {
+    more.classList.add("hidden");
+    dots.classList.remove("hidden");
+    btn.innerHTML = "Read more";
+  }
 }
 // =======================
 function myMail() {
