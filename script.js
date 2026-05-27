@@ -9,18 +9,17 @@ if (menuIcon && navbar) {
 }
 // =======================
 function readmoreless() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
+  const btnText = document.getElementById("myBtn");
 
   dots.classList.toggle("hidden");
   moreText.classList.toggle("hidden");
 
-  if (moreText.classList.contains("hidden")) {
-    btnText.innerHTML = "Read more";
-  } else {
-    btnText.innerHTML = "Read less";
-  }
+  btnText.innerHTML =
+    moreText.classList.contains("hidden")
+      ? "Read more"
+      : "Read less";
 }
 // =======================
 function myMail() {
