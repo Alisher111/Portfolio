@@ -661,7 +661,7 @@ li {
     font-size: 1.6rem;
 }
 .hidden {
-  display: none !important;
+  display: none;
 }
 #dots.hidden {
   display: none;
