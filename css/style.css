@@ -472,7 +472,6 @@ font-size: 1.6rem;
   color: black;
 }
 
-/* TAGS */
 .tags {
     display: flex;
     gap: 8px;
@@ -660,4 +659,7 @@ li {
 
 .social-icons a {
     font-size: 1.6rem;
+}
+.hidden {
+  display: none;
 }
