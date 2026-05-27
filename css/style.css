@@ -593,7 +593,6 @@ body {
     line-height: 1.7;
 }
 
-/* HEADINGS HIERARCHY FIX */
 h1 {
     font-size: clamp(3rem, 4vw, 6rem);
     line-height: 1.1;
@@ -659,7 +658,7 @@ li {
     font-size: 1.6rem;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 #dots.hidden {
   display: none;
