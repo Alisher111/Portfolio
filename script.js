@@ -17,11 +17,11 @@ function readmoreless() {
 
   if (isHidden) {
     more.classList.remove("hidden");
-    dots.style.display = "none";
+    dots.classList.add("hidden");
     btn.innerText = "Read less";
   } else {
     more.classList.add("hidden");
-    dots.style.display = "inline";
+    dots.classList.remove("hidden");
     btn.innerText = "Read more";
   }
 }
