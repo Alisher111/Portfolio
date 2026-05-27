@@ -1,246 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alisher's portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alisher's Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+<!-- HEADER -->
 <header class="header">
 
-<a href="index.html" class="logo">
+  <a href="index.html" class="logo">
     Alisher <span class="gradient-text">Akhmedyarov</span>
-</a>
-<i class="bx bx-menu" id="menu-icon"></i>
-<nav class="navbar">
+  </a>
+
+  <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="navbar">
     <a href="#home">Home</a>
-     <a href="#about">About me</a>
-      <a href="#services">Services</a>
-       <a href="#projects">Projects</a>
-        <a onclick="myMail()">Contacts</a>
-</nav>
-<a class="gradient-btn" onclick="myMail()"> Contact me</a>
+    <a href="#about">About me</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#" onclick="myMail()">Contacts</a>
+  </nav>
+
+  <a class="gradient-btn" href="#" onclick="myMail()">Contact me</a>
 
 </header>
 
+<!-- HOME -->
 <section class="home" id="home">
-<div class="home-content">
+
+  <div class="home-content">
     <h1>Hello, my name is <span>Alisher</span></h1>
-      <ul  class="info-list">
-        <li> <span>Name: </span>Alisher</li>
-        <li><span>Surname:</span> Akhmedyarov</li>
-        <li><span>Skills:</span><ul>
+
+    <ul class="info-list">
+      <li><span>Name:</span> Alisher</li>
+      <li><span>Surname:</span> Akhmedyarov</li>
+
+      <li>
+        <span>Skills:</span>
+        <ul>
           <li>Web designer</li>
           <li>Web developer</li>
           <li>IT specialist</li>
         </ul>
-      </li> 
-      <li><span>Hobbies:</span><ul>
+      </li>
+
+      <li>
+        <span>Hobbies:</span>
+        <ul>
           <li>Science fiction</li>
           <li>Gym</li>
           <li>AI learning</li>
         </ul>
       </li>
-      </ul>
-    <div class="social-icons">
-        <a href="https://t.me/AlishDarkus">
-<i class="bx bxl-telegram"></i>
-        </a>
-         <a href="#">
-<i class="bx bxl-linkedin-square"></i>
-        </a>
-         <a href="https://www.instagram.com/alishdarkus/">
-<i class="bx bxl-instagram-alt"></i>
-        </a>
-        <a onclick="myMail()">
-  <i class="bx bx-envelope"></i>
-</a>
-    </div>
-</div>
-  
-    <div class="home-img">
-
-      <img src="css/003.avif" alt="ME">
-    </div>
-</section>
-
-<section class="about" id="about">
-  <div class="about-img">
-  <img id="aboutSlide" src="css/alisher.avif" alt="ME">
-</div>
-
-<div class="about-content">
-  <h2>About <span>Me</span></h2>
-
-  <p>
-    I am a web developer, IT specialist, and something of a dreamer.<br>
-  </p>
-
-  <span id="dots">...</span>
-
-  <span id="more">
-    <p>I am a web developer and designer with experience in building modern, user-friendly websites.</p>
-
-    <ul>
-      <li>Web Design & Development education at George Brown College</li>
-      <li>Background in IT Systems and Cybersecurity (Bachelor's degree, Kazakhstan)</li>
-      <li>Part-time experience as a junior IT specialist during university studies</li>
-      <li>Experience with HTML, CSS, JavaScript, React, and Angular</li>
-      <li>Comfortable working with both frontend and basic backend concepts</li>
-      <li>Focus on clean structure, usability, and performance</li>
-      <li>Continuously learning modern technologies, including AI tools</li>
     </ul>
 
-    <p>
-      I can explain technical concepts in a simple way for beginners or in a detailed way when needed.  
-      My goal is to deliver high-quality results that satisfy both clients and my own professional standards.
-    </p>
-  </span>
+    <div class="social-icons">
+      <a href="https://t.me/AlishDarkus"><i class="bx bxl-telegram"></i></a>
+      <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="https://www.instagram.com/alishdarkus/"><i class="bx bxl-instagram-alt"></i></a>
+      <a href="#" onclick="myMail()"><i class="bx bx-envelope"></i></a>
+    </div>
+  </div>
 
-  <a class="btn" onclick="readmoreless()" id="myBtn">Read more</a>
-</div>
+  <div class="home-img">
+    <img src="css/003.avif" alt="ME" />
+  </div>
 
 </section>
 
+<!-- ABOUT -->
+<section class="about" id="about">
+
+  <div class="about-img">
+    <img src="css/alisher.avif" alt="ME" />
+  </div>
+
+  <div class="about-content">
+    <h2>About <span>Me</span></h2>
+
+    <p>
+      I am a web developer, IT specialist, and something of a dreamer.
+    </p>
+
+    <span id="dots">...</span>
+
+    <span id="more">
+      <p>I build modern and user-friendly websites.</p>
+
+      <ul>
+        <li>Web Design & Development (George Brown College)</li>
+        <li>Bachelor in IT Systems & Cybersecurity</li>
+        <li>Experience with HTML, CSS, JS, React, Angular</li>
+        <li>Focus on clean UI/UX and performance</li>
+      </ul>
+    </span>
+
+    <a class="btn" onclick="readmoreless()" id="myBtn">Read more</a>
+  </div>
+
+</section>
+
+<!-- SERVICES -->
 <section class="services" id="services">
 
   <h2 class="heading">Services</h2>
+
   <div class="services-container">
+
     <div class="service-box">
       <div class="service-info">
-          <h4>UI / UX Design</h4>
-          <p>I design user-friendly and accessible interfaces with a focus on clarity and usability, at the stage of creating in Figma.
-I consider different user needs, including accessibility (vision impairments, age-related factors, etc.), as well as client requirements and project goals.
-I validate design decisions through usability thinking and real user perspectives.</p>
+        <h4>UI / UX Design</h4>
+        <p>Clean and accessible interface design focused on usability.</p>
       </div>
     </div>
 
-     <div class="service-box">
+    <div class="service-box">
       <div class="service-info">
-          <h4>Frontend Development</h4>
-          <p>I build responsive and modern web interfaces using HTML, CSS, and JavaScript frameworks such as React and Angular.
-My focus is on performance, clean structure, and user experience. 
-I continuously update my skills and explore new technologies, including AI tools, to stay current in the field.
-</p>
+        <h4>Frontend Development</h4>
+        <p>Responsive websites using HTML, CSS, JS, React, Angular.</p>
       </div>
     </div>
 
-     <div class="service-box">
+    <div class="service-box">
       <div class="service-info">
-          <h4>IT Specialist</h4>
-          <p>I have a background in IT systems and cybersecurity, with hands-on experience in both hardware and software support.
-My experience includes academic training in IT security systems and part-time IT work during my studies.
-I am comfortable working across systems, troubleshooting technical issues, and supporting both development and infrastructure tasks.</p>
+        <h4>IT Specialist</h4>
+        <p>System support, troubleshooting and cybersecurity basics.</p>
       </div>
     </div>
-
 
   </div>
 
 </section>
 
+<!-- PROJECTS -->
 <section class="projects" id="projects">
 
   <h2 class="heading">Projects</h2>
 
   <div class="project-box">
 
-  <div class="project-card">
+    <!-- PROJECT 1 -->
+    <div class="project-card">
 
-  <img src="css/project1.png" alt="Project 1">
+      <img src="css/project1.png" alt="Project 1" />
 
-  <h3>Landing Page</h3>
+      <h3>Landing Page</h3>
 
-  <p>
-    HTML / CSS responsive website with modern layout.
-  </p>
+      <p>HTML / CSS responsive website with modern layout.</p>
 
-  <div class="tags">
-    <span>HTML</span>
-    <span>CSS</span>
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://alisher111.github.io/questionnaire/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Alisher111/questionnaire" target="_blank">Code</a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+
+      <img src="css/project2.png" alt="Wordle Project" />
+
+      <h3>Wordle Game</h3>
+
+      <p>JavaScript Wordle game (custom version).</p>
+
+      <div class="tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://alisher111.github.io/Wordle/" target="_blank">Live Demo</a>
+        <a href="https://github.com/Alisher111/Wordle" target="_blank">Code</a>
+      </div>
+
+    </div>
+
   </div>
 
-  <div class="project-links">
-    <a href="https://alisher111.github.io/questionnaire/" target="_blank">Live Demo</a>
-
-    <a href="https://github.com/Alisher111/questionnaire" target="_blank">
-      Code
-    </a>
-  </div>
-
-</div>
- <div class="project-box">
-
-  <div class="project-card">
-
-  <img src="css/project2.png" alt="Project 2">
-
-  <h3>Landing Page</h3>
-
-  <p>
-WORDLE Game (group task, later upgraded by me)
-  </p>
-
-  <div class="tags">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-  </div>
-
-  <div class="project-links">
-    <a href="https://alisher111.github.io/Wordle/ target="_blank">Live Demo</a>
-
-    <a href="https://github.com/Alisher111/Wordle" target="_blank">
-      Code
-    </a>
-  </div>
-
-</div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
-   <div class="social-icons">
-        <a href="https://t.me/AlishDarkus">
-<i class="bx bxl-telegram"></i>
-        </a>
-         <a href="#">
-<i class="bx bxl-linkedin-square"></i>
-        </a>
-         <a href="https://www.instagram.com/alishdarkus/">
-<i class="bx bxl-instagram-alt"></i>
-        </a>
-        <a onclick="myMail()">
-  <i class="bx bx-envelope"></i>
-</a>
-    </div>
-    <ul class="list">
-      <li>
-        <a href="#about">FAQ</a>
-      </li>
-      <li>
-        <a href="#services">Services</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a onclick="myMail()">Contact</a>
-      </li>
-    </ul>
-    <p class="copyright">
-      © Alisher Akhmedyarov | All Rights Reserved
-    </p>
-</footer>
-    
 
-    <script src="script.js"></script>
-  </body>
+  <div class="social-icons">
+    <a href="https://t.me/AlishDarkus"><i class="bx bxl-telegram"></i></a>
+    <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+    <a href="https://www.instagram.com/alishdarkus/"><i class="bx bxl-instagram-alt"></i></a>
+    <a href="#" onclick="myMail()"><i class="bx bx-envelope"></i></a>
+  </div>
+
+  <ul class="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#" onclick="myMail()">Contact</a></li>
+  </ul>
+
+  <p class="copyright">
+    © Alisher Akhmedyarov | All Rights Reserved
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
