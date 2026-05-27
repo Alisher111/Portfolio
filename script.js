@@ -13,17 +13,10 @@ function readmoreless() {
   const more = document.getElementById("more");
   const btn = document.getElementById("myBtn");
 
-  const isHidden = more.classList.contains("hidden");
+  const expanded = more.classList.toggle("hidden") === false;
 
-  if (isHidden) {
-    more.classList.remove("hidden");
-    dots.classList.add("hidden");
-    btn.innerHTML = "Read less";
-  } else {
-    more.classList.add("hidden");
-    dots.classList.remove("hidden");
-    btn.innerHTML = "Read more";
-  }
+  dots.style.display = expanded ? "none" : "inline";
+  btn.innerText = expanded ? "Read less" : "Read more";
 }
 // =======================
 function myMail() {
