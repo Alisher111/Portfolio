@@ -663,3 +663,6 @@ li {
 .hidden {
   display: none !important;
 }
+#dots.hidden {
+  display: none;
+}
