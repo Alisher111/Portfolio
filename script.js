@@ -36,25 +36,31 @@ function myMail() {
   alert("Email copied to clipboard:\n" + email);
 }
 // =======================
-const aboutImages = [
-  "css/alisher.avif",
-  "css/me_o1.avif",
-  "css/eleph.avif"
-];
+document.addEventListener("DOMContentLoaded", () => {
 
-let i = 0;
+  const aboutImages = [
+    "css/alisher.avif",
+    "css/me_o1.avif",
+    "css/eleph.avif"
+  ];
 
-function changeAboutSlide() {
+  let i = 0;
   const img = document.getElementById("aboutSlide");
-  if (!img) return;
 
-  img.style.opacity = "0";
+  if (!img) {
+    console.warn("aboutSlide not found");
+    return;
+  }
 
-  setTimeout(() => {
-    i = (i + 1) % aboutImages.length;
-    img.src = aboutImages[i];
-    img.style.opacity = "1";
-  }, 300);
-}
+  function changeAboutSlide() {
+    img.style.opacity = 0;
 
-setInterval(changeAboutSlide, 4000);
+    setTimeout(() => {
+      i = (i + 1) % aboutImages.length;
+      img.src = aboutImages[i];
+      img.style.opacity = 1;
+    }, 300);
+  }
+
+  setInterval(changeAboutSlide, 3000);
+});
