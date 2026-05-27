@@ -31,7 +31,6 @@ function readmoreless() {
 function myMail() {
   const email = "akhmedyarovalisher@gmail.com";
 
-  // better than alert for portfolio
   navigator.clipboard.writeText(email);
 
   alert("Email copied to clipboard:\n" + email);
