@@ -661,5 +661,5 @@ li {
     font-size: 1.6rem;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
