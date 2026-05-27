@@ -8,23 +8,18 @@ if (menuIcon && navbar) {
   });
 }
 // =======================
-const dots = document.getElementById("dots");
-const moreText = document.getElementById("more");
-const btnText = document.getElementById("myBtn");
-
 function readmoreless() {
-  if (!dots || !moreText || !btnText) return;
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-  const isHidden = moreText.style.display === "none" || moreText.style.display === "";
+  dots.classList.toggle("hidden");
+  moreText.classList.toggle("hidden");
 
-  if (isHidden) {
-    dots.style.display = "none";
-    moreText.style.display = "inline";
-    btnText.innerText = "Read less";
+  if (moreText.classList.contains("hidden")) {
+    btnText.innerHTML = "Read more";
   } else {
-    dots.style.display = "inline";
-    moreText.style.display = "none";
-    btnText.innerText = "Read more";
+    btnText.innerHTML = "Read less";
   }
 }
 // =======================
