@@ -37,8 +37,9 @@ function myMail() {
 document.addEventListener("DOMContentLoaded", () => {
 
   const aboutImages = [
-    "css/alisher.avif",
+    "css/selfie1.jpeg",
     "css/me_o1.avif",
+    "css/alisher.avif",
     "css/eleph.avif"
   ];
 
