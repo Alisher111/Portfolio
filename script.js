@@ -61,5 +61,33 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 300);
   }
 
-  setInterval(changeAboutSlide, 3000);
+  setInterval(changeArtSlide, 3000);
+});
+//===============================
+document.addEventListener("DOMContentLoaded", () => {
+
+  const AiImages = [
+    "css/ai_art_example.png",
+    "css/ai_art_example1.png",
+  ];
+
+  let i = 0;
+  const img = document.getElementById("ArtSlide");
+
+  if (!img) {
+    console.warn("ArtSlide not found");
+    return;
+  }
+
+  function changeArtSlide() {
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+      i = (i + 1) % AiImages.length;
+      img.src = AiImages[i];
+      img.style.opacity = 1;
+    }, 300);
+  }
+
+  setInterval(changeArtSlide, 3000);
 });
