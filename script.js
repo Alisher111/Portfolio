@@ -67,7 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
 
   const AiImages = [
-    "css/ai_art_example.png",
     "css/ai_art_example1.png",
   ];
 
