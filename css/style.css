@@ -61,7 +61,9 @@ body{
     margin: 30px 0;
 }
 .photo h2{
-  text-align: center; padding-top: 1rem;
+  text-align: center; 
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 .photo img{
     width: 100%;
