@@ -15,6 +15,10 @@
   section { padding: 8rem 5%; }
 }
 
+#aboutSlide,
+#ArtSlide {
+    transition: opacity 0.3s ease;
+}
 
 h1 { letter-spacing: -1px; }
 h3 { opacity: 0.8; }
