@@ -36,6 +36,10 @@ function myMail() {
 // =======================
 document.addEventListener("DOMContentLoaded", () => {
 
+  // =======================
+  // ABOUT ME SLIDER
+  // =======================
+
   const aboutImages = [
     "css/selfie1.jpeg",
     "css/me_o1.avif",
@@ -43,54 +47,56 @@ document.addEventListener("DOMContentLoaded", () => {
     "css/eleph.avif"
   ];
 
-  let i = 0;
-  const img = document.getElementById("aboutSlide");
+  let aboutIndex = 0;
+  const aboutImg = document.getElementById("aboutSlide");
 
-  if (!img) {
-    console.warn("aboutSlide not found");
-    return;
+  if (aboutImg) {
+
+    setInterval(() => {
+
+      aboutImg.style.opacity = 0;
+
+      setTimeout(() => {
+
+        aboutIndex = (aboutIndex + 1) % aboutImages.length;
+        aboutImg.src = aboutImages[aboutIndex];
+
+        aboutImg.style.opacity = 1;
+
+      }, 300);
+
+    }, 3000);
   }
 
-  function changeAboutSlide() {
-    img.style.opacity = 0;
 
-    setTimeout(() => {
-      i = (i + 1) % aboutImages.length;
-      img.src = aboutImages[i];
-      img.style.opacity = 1;
-    }, 300);
-  }
+  // =======================
+  // AI ART SLIDER
+  // =======================
 
-  setInterval(changeAboutSlide, 3000);
-});
-
-
-// ===============================
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  const AiImages = [
-     "css/ai_art_example.png",
+  const aiImages = [
+    "css/ai_art_example.png",
     "css/ai_art_example1.png"
   ];
 
-  let i = 0;
-  const img = document.getElementById("ArtSlide");
+  let aiIndex = 0;
+  const aiImg = document.getElementById("ArtSlide");
 
-  if (!img) {
-    console.warn("ArtSlide not found");
-    return;
+  if (aiImg) {
+
+    setInterval(() => {
+
+      aiImg.style.opacity = 0;
+
+      setTimeout(() => {
+
+        aiIndex = (aiIndex + 1) % aiImages.length;
+        aiImg.src = aiImages[aiIndex];
+
+        aiImg.style.opacity = 1;
+
+      }, 300);
+
+    }, 3000);
   }
 
-  function changeArtSlide() {
-    img.style.opacity = 0;
-
-    setTimeout(() => {
-      i = (i + 1) % AiImages.length;
-      img.src = AiImages[i];
-      img.style.opacity = 1;
-    }, 300);
-  }
-
-  setInterval(changeArtSlide, 3000);
 });
