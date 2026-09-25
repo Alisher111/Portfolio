@@ -61,13 +61,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 300);
   }
 
-  setInterval(changeArtSlide, 3000);
+  setInterval(changeAboutSlide, 3000);
 });
-//===============================
+
+
+// ===============================
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const AiImages = [
-    "css/ai_art_example1.png",
+     "css/ai_art_example.png",
+    "css/ai_art_example1.png"
   ];
 
   let i = 0;
