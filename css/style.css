@@ -56,7 +56,9 @@ body{
     text-align: center;
     margin: 30px 0;
 }
-
+.photo h2{
+  text-align: center; padding-top: 1rem;
+}
 .photo img{
     width: 100%;
     max-width: 900px;
