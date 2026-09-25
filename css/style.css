@@ -63,7 +63,7 @@ body{
 .photo h2{
   text-align: center; 
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 15px;
 }
 .photo img{
     width: 100%;
